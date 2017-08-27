@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "heroku-postbuild": "webpack -p --config ./webpack.config.js --progress",
-    "start": "NODE_ENV=production nodemon server",
+    "start": "NODE_ENV=production node server",
     "server-dev": "nodemon server",
     "build": "webpack --watch"
   },
