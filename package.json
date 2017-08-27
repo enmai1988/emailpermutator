@@ -6,6 +6,7 @@
   "author": "Eric Mai <enmai1988@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "heroku-postbuild": "webpack -p --config ./webpack.config.js --progress",
     "start": "NODE_ENV=production nodemon server",
     "server-dev": "nodemon server",
     "build": "webpack --watch"
