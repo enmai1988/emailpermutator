@@ -40,7 +40,7 @@ class App extends React.Component {
       result.push(firstName + delimitor + lastName[0] + domain);
     });
 
-    this.setState({ result }, () => this.setState({ firstName: '', lastName: '', domain: '' }));
+    this.setState({ result });
   }
 
   render() {
