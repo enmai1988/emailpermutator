@@ -27,9 +27,9 @@ class App extends React.Component {
 
   handleSubmit(e, data) {
     e.preventDefault();
-    let firstName = this.state.firstName;
-    let lastName = this.state.lastName;
-    let domain = `@${this.state.domain}`;
+    let firstName = this.state.firstName.toLowerCase();
+    let lastName = this.state.lastName.toLowerCase();
+    let domain = `@${this.state.domain.toLowerCase()}`;
 
     let result = [firstName + domain, lastName + domain];
     let delimitors = ['.', '_', '-', ''];
